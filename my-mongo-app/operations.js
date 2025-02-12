@@ -17,7 +17,7 @@ async function addItem() {
     const textColor = text ? readline.question("Enter text color: ") : null;
 
     const newSquare = new Square({ length, color, isFilled, text, textColor });
-    await newSquare.save();cd 
+    await newSquare.save();
     console.log("✅ Square added!");
 }
 
